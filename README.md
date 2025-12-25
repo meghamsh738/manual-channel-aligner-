@@ -22,6 +22,7 @@ This folder now contains the standalone Python app that replaces the old Fiji/Im
 - Never overwrites original images
 
 ## Screenshots
+Screenshots are captured on Windows. After the Dec 25, 2025 typography refresh, re-run `scripts/capture_screenshots.py` to update the images below.
 ![App overview](screenshots/app-overview.png)
 ![Alignment controls](screenshots/alignment-controls.png)
 

@@ -632,24 +632,42 @@ class ManualChannelAlignerApp(ttk.Frame):
         )
 
     def _setup_fonts(self) -> None:
-        base_family = self._pick_font_family(
+        display_family = self._pick_font_family(
             [
-                "Avenir Next",
-                "Avenir",
+                "Bahnschrift",
+                "Franklin Gothic Medium",
+                "Segoe UI Variable Display",
+                "Segoe UI Variable",
+                "Arial Black",
+                "DejaVu Sans",
+                "Arial",
+            ]
+        )
+        body_family = self._pick_font_family(
+            [
+                "Bahnschrift",
+                "Segoe UI Variable Text",
                 "Segoe UI",
-                "Helvetica Neue",
-                "Inter",
                 "Noto Sans",
                 "DejaVu Sans",
                 "Arial",
             ]
         )
+        mono_family = self._pick_font_family(
+            [
+                "Cascadia Mono",
+                "Consolas",
+                "Menlo",
+                "DejaVu Sans Mono",
+                "Courier New",
+            ]
+        )
         self.fonts = {
-            "title": tkfont.Font(family=base_family, size=18, weight="bold"),
-            "section": tkfont.Font(family=base_family, size=12, weight="bold"),
-            "body": tkfont.Font(family=base_family, size=11),
-            "caption": tkfont.Font(family=base_family, size=10),
-            "button": tkfont.Font(family=base_family, size=11, weight="bold"),
+            "title": tkfont.Font(family=display_family, size=20, weight="bold"),
+            "section": tkfont.Font(family=display_family, size=13, weight="bold"),
+            "body": tkfont.Font(family=body_family, size=11),
+            "caption": tkfont.Font(family=mono_family, size=10),
+            "button": tkfont.Font(family=display_family, size=11, weight="bold"),
         }
         self.master.option_add("*Font", self.fonts["body"])
 
