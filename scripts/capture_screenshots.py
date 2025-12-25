@@ -9,6 +9,10 @@ from pathlib import Path
 import tkinter as tk
 from PIL import ImageGrab
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from manual_channel_aligner.app import DND_AVAILABLE, ManualChannelAlignerApp, TkinterDnD
 from manual_channel_aligner.screenshot_utils import parse_geometry, window_bbox
 
