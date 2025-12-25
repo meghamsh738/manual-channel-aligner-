@@ -1,6 +1,6 @@
 # Manual Channel Aligner App
 
-This folder now contains the standalone Python app that replaces the old Fiji/ImageJ plugin.
+This folder contains the standalone Manual Channel Aligner app, replacing the old Fiji/ImageJ workflow.
 
 ## Features
 - Manual alignment of 2+ channels with keyboard controls
