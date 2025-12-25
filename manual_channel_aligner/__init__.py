@@ -1,0 +1,1 @@
+"""Manual channel alignment app."""
