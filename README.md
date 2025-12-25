@@ -24,7 +24,6 @@ This folder now contains the standalone Python app that replaces the old Fiji/Im
 ## Screenshots
 ![App overview](screenshots/app-overview.png)
 ![Alignment controls](screenshots/alignment-controls.png)
-*Screenshots are placeholders until real captures are added.*
 
 ## Usage
 ```bash
@@ -40,6 +39,13 @@ python3 -m manual_channel_aligner path/to/channel1.tif path/to/channel2.tif
 ```bat
 cd /d "<PROJECTS_DIR>\chanel alignment plugin-imagej"
 .\.venv\Scripts\python -m manual_channel_aligner
+```
+
+## Generate real screenshots (Windows)
+This captures the running app window and replaces the images in `screenshots/`.
+```bat
+cd /d "<PROJECTS_DIR>\chanel alignment plugin-imagej"
+.\.venv\Scripts\python scripts\capture_screenshots.py "<DATA_DIR>\New folder\PV images\App5.tif"
 ```
 
 ## Keybindings
